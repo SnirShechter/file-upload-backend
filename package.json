@@ -1,0 +1,44 @@
+{
+  "name": "snirs-file-upload",
+  "version": "4.1.0",
+  "adonis-version": "4.1.0",
+  "description": "Snir's file upload",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "start:normal": "node server.js",
+    "test": "node ace test"
+  },
+  "keywords": [
+    "file-upload",
+    "file-sharing"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/bodyparser": "^2.0.5",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/drive": "^1.0.4",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "aws-sdk": "^2.553.0",
+    "hashids": "^2.0.1",
+    "mime-types": "^2.1.24",
+    "mysql": "^2.17.1",
+    "pm2": "^4.1.2",
+    "socket.io": "^2.3.0",
+    "url-parse": "^1.4.7",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {},
+  "autoload": {
+    "App": "./app"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
